@@ -41,5 +41,4 @@ class FlatsController < ApplicationController
   def set_flat
     @flat = Flat.find(params[:id])
   end
-
 end
