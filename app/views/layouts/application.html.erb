@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <div class="navbar d-flex justify-content-between">
+      <h3>Simple Airbnb</h3>
+      <%= link_to "Add Flat", new_flat_path, class: "btn btn-outline-info" %>
+    </div>
     <%= yield %>
   </body>
 </html>
