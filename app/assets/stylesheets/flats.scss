@@ -23,6 +23,12 @@
     margin-left: 8px;
     color: rgb(23, 127, 251);
   }
+  .card-img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+  }
 }
 
 .flat-show-card {
@@ -46,4 +52,11 @@
   margin: 24px;
   padding: 16px;
   box-shadow: 0 0 5px rgba(23, 127, 251, 0.2);
+}
+
+.show-img {
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
 }

@@ -3,6 +3,7 @@
   <div class="cards">
     <% @flats.each do |flat| %>
       <div class="flat-card">
+        <div class="card-img" style="background-image: url(<%= flat.image_url %>)"></div>
         <h3><%= flat.name %></h3>
         <p><%= flat.address %></p>
         <div class="d-flex">

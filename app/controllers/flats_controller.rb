@@ -18,7 +18,9 @@ class FlatsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    # raise
+  end
 
   def edit; end
 
