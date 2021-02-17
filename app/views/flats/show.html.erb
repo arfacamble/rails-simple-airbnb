@@ -1,0 +1,42 @@
+<div class="wrapper bg-secondary mb-3 d-flex align-items-center justify-content-center" style="height: 250px">
+  <h3>MAP</h3>
+</div>
+<div class="container d-flex justify-content-center align-items-start">
+  <div class="flat-show-card">
+    <h1><%= @flat.name %></h1>
+    <p><%= @flat.address %></p>
+    <h3>Further Informations:</h3>
+    <p><%= @flat.description %></p>
+    <h3>Capacity and Cost:</h3>
+    <div class="d-flex">
+      <i class="far fa-user"></i>
+      <p><%= @flat.number_of_guests %></p>
+      <i class="far fa-money-bill-alt"></i>
+      <p><%= @flat.price_per_night %></p>
+    </div>
+  </div>
+  <div class="booking-form">
+    <h4>Book it up</h4>
+    <form action="" class="form-group">
+      <div class="input-group my-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="fromPrepend">From:</span>
+        </div>
+        <input type="date" class="form-control" id="from" placeholder="DD/MM/YY" aria-describedby="fromPrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+      <div class="input-group my-2">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="toPrepend">To:</span>
+        </div>
+        <input type="date" class="form-control" id="to" placeholder="DD/MM/YY" aria-describedby="toPrepend" required>
+        <div class="invalid-tooltip">
+          Please choose a unique and valid username.
+        </div>
+      </div>
+      <button class="btn btn-success w-100" type="submit">Book</button>
+    </form>
+  </div>
+</div>
